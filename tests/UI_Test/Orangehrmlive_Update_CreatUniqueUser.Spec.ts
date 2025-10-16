@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Orangehrmlive Update Create Unique User', async ({ page }) => {
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
   await expect(page.getByRole('img', { name: 'company-branding' })).toBeVisible();
   await page.getByRole('textbox', { name: 'Username' }).click();
