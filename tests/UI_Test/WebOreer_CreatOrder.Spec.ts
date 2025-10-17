@@ -37,7 +37,7 @@ test('Login and Then Create Order and Verify Order', async ({ page }) => {
 //   await page.getByText('New order has been')
  const neworder = await page.locator("//strong[normalize-space()='New order has been successfully added.']")
  console.log(neworder)
-await page.pause()
+// await page.pause()
   await expect(neworder).toHaveText('New order has been successfully added.')
   await page.getByRole('link', { name: 'View all orders' }).click()
   await expect(page.locator("//td[text()='Dixit']")).toHaveText('Dixit')
