@@ -4,6 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
+require('dotenv').config();
 // import dotenv from 'dotenv';
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
@@ -13,7 +14,8 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   // testDir: './tests',
-  testDir: './tests/UI_Test',
+  // testDir: './tests/UI_Test',
+  testDir: './tests/ZeroBank_Test_PageObject',
   //  testDir: './tests/UI_Special_Control',
   /* Run tests in files in parallel */
   fullyParallel: true,
