@@ -23,7 +23,7 @@ test.describe('Transfer Funds and Make Payment', () => {
     page = await context.newPage();
 
     // Initialize page objects
-    abstractPage = new AbstractPage(page);
+    abstractPage = new AbstractPage(page); 
     homePage = new HomePage(page);
     loginPage = new LoginPage(page);
     navbar = new Navbar(page);

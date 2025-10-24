@@ -15,7 +15,8 @@ require('dotenv').config();
 export default defineConfig({
   // testDir: './tests',
   // testDir: './tests/UI_Test',
-  testDir: './tests/ZeroBank_Test_PageObject',
+  // testDir: './tests/ZeroBank_Test_PageObject',
+  testDir: './tests/API_Test',
   //  testDir: './tests/UI_Special_Control',
   /* Run tests in files in parallel */
   fullyParallel: true,
